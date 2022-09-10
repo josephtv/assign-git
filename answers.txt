@@ -1,4 +1,37 @@
 • What is a gitignore file and what should it include for a Java project?
+
+	A gitignore file is used to tell git to ignore certain files while tracking all the changes in our project directory.
+	These files won't be tracked by git and thus changes made to those files will be ignored.
+	While creating .gitignore file we can see that it includes	file extensions for files which we do not want to track. 
+	
+	For a java project there are different files which we do not want to include in source control.
+	While creating a repository and initilizing it with a .gitignore file we can specify the file type as java and then it will by default include
+	some of the file extensions which won't be tracked by git. These extensions include complied class files, log files, package files, ,project file, etc.
+	
+-----------------------------------------------------------------------------------------------------------------------------------------------------------		
+	
 • What does fast-forward in git mean?
+
+	In git HEAD points to the current branch (or commit). Now consider we have a new feature branch created from the master branch and we make one or more
+	commits in that new branch. Now HEAD points to the latest commit in the new branch. At this point we want to merge those new commits to our master branch.
+	Fast-forward happens in git when there is no conflicts between the feature branch and master branch. That means there are no conflicting changes in
+	between the last change in the master branch and our new feature branch. Thus git just forwards the HEAD pointer of the master to the latest commit in
+	feature branch.
+	
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+	
 • Why should you have different branches?
+
+	Usually in a project there will be multiple people collaborating together and multiple features to be implemented in. When we create a new project in Git
+	it starts with a main(master) branch. It is best practice to keep the code in master branch always working and we need to avoid breaking the master branch.
+	Thus differernt branch allows different users collaborating in the project to implement different features of the project without breaking the working master
+	branch. This allows developers and testers to test and verify that everything works before pushing their code to the master branch. This also helps in resolving
+	conflicts rather than everyone working in a single main branch. Thus different branches will ensure that one copy of our project will always run in main branch.
+	
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
 • In a project how many remote Git repositories do you usually have?
+
+	In a project we usually have one remote git repository. Two examples of remote git repositories are GitHub and BitBucket.
+	
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
