@@ -2,7 +2,7 @@
 
 	A gitignore file is used to tell git to ignore certain files while tracking all the changes in our project directory.
 	These files won't be tracked by git and thus changes made to those files will be ignored.
-	While creating .gitignore file we can see that it includes	file extensions for files which we do not want to track. 
+	While creating .gitignore file we can see that it includes file extensions for files which we do not want to track. 
 	
 	For a java project there are different files which we do not want to include in source control.
 	While creating a repository and initilizing it with a .gitignore file we can specify the file type as java and then it will by default include
@@ -25,8 +25,9 @@
 	Usually in a project there will be multiple people collaborating together and multiple features to be implemented in. When we create a new project in Git
 	it starts with a main(master) branch. It is best practice to keep the code in master branch always working and we need to avoid breaking the master branch.
 	Thus differernt branch allows different users collaborating in the project to implement different features of the project without breaking the working master
-	branch. This allows developers and testers to test and verify that everything works before pushing their code to the master branch. This also helps in resolving
-	conflicts rather than everyone working in a single main branch. Thus different branches will ensure that one copy of our project will always run in main branch.
+	branch. This allows developers and testers to test and verify that everything works before pushing their code to the master branch. This also helps
+	in resolving conflicts rather than everyone working in a single main branch. Thus different branches will ensure that one copy of our project will always run
+	in main branch.
 	
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
