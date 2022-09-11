@@ -6,7 +6,13 @@
 	
 	For a java project there are different files which we do not want to include in source control.
 	While creating a repository and initilizing it with a .gitignore file we can specify the file type as java and then it will by default include
-	some of the file extensions which won't be tracked by git. These extensions include complied class files, log files, package files, ,project file, etc.
+	some of the file extensions which won't be tracked by git.
+	
+	These extensions include 
+		- complied class files (*.class)
+		- log files (*.log)
+		- package files (*.zip, *.jar, *.war)
+		- .project file, etc.
 	
 -----------------------------------------------------------------------------------------------------------------------------------------------------------		
 	
@@ -34,5 +40,12 @@
 • In a project how many remote Git repositories do you usually have?
 
 	In a project we usually have one remote git repository. Two examples of remote git repositories are GitHub and BitBucket.
+	
+	Repositories can be local and remote. Local repositories are the versions of our project which we have in our local machines.
+	Whereas a remote repositories is a version of our project hosted on the network somewhere (like GitHub, BitBucket, etc.).
+	
+	In a project with only one repository, usually we may need only one remote git repository as everyone contributing in this project
+	can be given access to this repository and they can have their own local versions of this repository where the can work individually
+	and later all their work can be pushed to the remote repository for that particular project.
 	
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
